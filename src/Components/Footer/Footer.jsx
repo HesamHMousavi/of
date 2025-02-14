@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <footer ref={footerRef} className="footer">
       <p className={`footer-text ${isVisible ? "animate" : ""}`}>
-        COPYRIGHT © 2025 - OAKFOREST. ALL RIGHTS RESERVED
+        COPYRIGHT © 2025 - OAKFORESTOFYORKSHIRE. ALL RIGHTS RESERVED
       </p>
       <div className="footer-icons">
         <IoLogoInstagram

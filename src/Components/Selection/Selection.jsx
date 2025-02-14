@@ -56,9 +56,9 @@ const Selection = () => {
         <div className="selection-content">
           <h2 className="Moda">BEDROOMS</h2>
           <p>
-            Whether you want to buy a Coloured Glass Sliding Door Wardrobe,
-            Fitted Wardrobe, Mirror Door Wardrobe, Hinged Door Wardrobe, or
-            Walk-in Wardrobe, we have an infinite range of options.
+            From trendy apart-hotels to luxury living, we can work on any size
+            project across the North of England, delivering a smooth,
+            hassle-free service, to deadline.
           </p>
           <button className="selection-button" onClick={() => nav("/bedrooms")}>
             SHOW MORE
@@ -73,9 +73,9 @@ const Selection = () => {
         <div className="selection-content">
           <h2 className="Moda">WARDROBES</h2>
           <p>
-            From trendy apart-hotels to luxury living, we can work on any size
-            project across the North of England, delivering a smooth,
-            hassle-free service, to deadline.
+            Whether you want to buy a Coloured Glass Sliding Door Wardrobe,
+            Fitted Wardrobe, Mirror Door Wardrobe, Hinged Door Wardrobe, or
+            Walk-in Wardrobe, we have an infinite range of options.
           </p>
           <button
             className="selection-button"

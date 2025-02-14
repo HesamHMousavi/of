@@ -111,6 +111,7 @@
     left: 0;
     width: 100%;
     background: #1f2a38;
+    background: var(--Green);
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -42,7 +42,7 @@ const ContactForm = () => {
               form and we’d be delighted to speak with you.
             </p>
             <div className="contact-details">
-              <h3 className="company-name Moda">OAKFOREST</h3>
+              <h3 className="company-name Moda">OAKFOREST OF YORKSHIRE</h3>
               <p className="Moda">18 Northgate</p>
               <p className="Moda">Baildon</p>
               <p className="Moda">West Yorkshire</p>
