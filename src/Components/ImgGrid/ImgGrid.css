@@ -1,0 +1,33 @@
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-item {
+  overflow: hidden;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.img-item.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img-item img {
+  width: 100%;
+  height: 250px; /* Fixed height for uniformity */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-item:hover img {
+  transform: scale(1.05);
+}

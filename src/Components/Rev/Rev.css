@@ -1,0 +1,212 @@
+/* Review Section */
+.rev {
+  text-align: center;
+  padding: 50px 10%;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Landing animation triggers */
+.rev.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Wrapper to keep text and dots positioned correctly */
+.rev-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Ensures the review content stays centered */
+.rev-container {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Default text styles */
+.rev-text {
+  font-size: 1.5rem;
+  color: #bbb;
+  font-weight: 400;
+  font-style: italic;
+  max-width: 800px;
+  padding: 0 20px; /* Prevents text from touching screen edges */
+}
+
+/* Author */
+.rev-author {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #bbb;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ✅ Ensure stars are always in a row */
+.rev-author .star-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Star styling */
+.star {
+  margin: 0 3px;
+  color: #ddd;
+}
+
+/* Fade Animation */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Slide-in effect for first appearance */
+.slide-in {
+  transform: translateY(20px);
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+/* Slide animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Dots Navigation */
+.rev-dots {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Dot Styling */
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Active Dot */
+.dot.active {
+  background-color: var(--Green);
+}
+
+/* 📌 RESPONSIVE DESIGN */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .rev {
+    padding: 40px 8%;
+  }
+
+  .rev-container {
+    max-width: 750px;
+  }
+
+  .rev-text {
+    font-size: 1.4rem;
+    padding: 0 15px;
+  }
+
+  .rev-author {
+    font-size: 1rem;
+  }
+
+  .star {
+    font-size: 20px;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .rev {
+    padding: 30px 6%;
+  }
+
+  .rev-container {
+    max-width: 600px;
+  }
+
+  .rev-text {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .rev-author {
+    font-size: 0.95rem;
+  }
+
+  .star {
+    font-size: 18px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .rev {
+    padding: 25px 5%;
+  }
+
+  .rev-container {
+    max-width: 100%;
+  }
+
+  .rev-text {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+
+  .rev-author {
+    font-size: 0.9rem;
+  }
+
+  .star {
+    font-size: 16px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+}

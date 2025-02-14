@@ -1,0 +1,181 @@
+/* HERO SECTION */
+.hero-home {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* MAIN IMAGE */
+.hero-main {
+  width: 60%;
+  height: 100%;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* GRID CONTAINER */
+.hero-grid {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+}
+
+/* GRID ITEMS */
+.hero-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Fade-in Animation */
+.hero-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* IMAGES INSIDE GRID */
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(0.8);
+  transition: transform 1s ease-out;
+  max-height: 300px;
+}
+
+.hero-item.visible .grid-image {
+  transform: scale(1);
+}
+
+/* TEXT BLOCK */
+.hero-item.text h2{
+  font-size: 20px;
+}
+.hero-item.text {
+  background: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: 250;
+  font-size: 18px;
+  gap: 1rem;
+  min-height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE FIXES */
+
+/* 📌 Tablets & Medium Screens (max-width: 1024px) */
+@media (max-width: 1200px) {
+  .hero-home {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-main {
+    width: 100%;
+    height: 400px;
+  }
+
+  .hero-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-item {
+    flex: 1 1 50%; /* Each item takes 50% width */
+    min-width: 50%;
+  }
+
+  .hero-item.text {
+    padding: 15px;
+  }
+
+  .hero-item.text h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-item.text p {
+    font-size: 1rem;
+  }
+}
+
+/* 📌 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-home {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-grid div:nth-child(2){
+    order: 4;
+  }
+  .dis-app{
+    display: none;
+  }
+
+  .hero-main {
+    width: 100%;
+    height: 300px;
+  }
+
+  .hero-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-item {
+    flex: 1 1 100%; /* Full width for each item */
+    min-width: 100%;
+  }
+
+  .hero-item.text {
+    padding: 10px;
+  }
+
+  .hero-item.text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-item.text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 📌 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-main {
+    height: 250px;
+  }
+
+  .hero-item {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .hero-item.text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-item.text p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}

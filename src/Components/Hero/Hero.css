@@ -1,0 +1,218 @@
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 5%;
+  background: #f7f7f7;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Skewed background */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+  transform: skewX(-30deg);
+  transform-origin: left;
+}
+
+/* Text animations */
+.hero-title,
+.hero-desc,
+.hero-button {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Title appears first */
+.hero-title {
+  animation-delay: 0.2s;
+  text-transform: uppercase;
+}
+
+/* Description follows */
+.hero-desc {
+  animation-delay: 0.4s;
+}
+
+/* Button appears last */
+.hero-button {
+  animation-delay: 0.6s;
+}
+
+/* Keyframes for the text landing animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero content layout */
+.hero-content {
+  width: 50%;
+  z-index: 2;
+  padding-right: 40px;
+}
+
+/* Hero title */
+.hero-title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+/* Hero description */
+.hero-desc {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Button */
+.hero-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--Brown);
+  border: 2px solid var(--Brown);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  background: var(--Brown);
+  color: white;
+}
+
+/* Hero image */
+.hero-image {
+  width: 50%;
+  z-index: 2;
+  text-align: right;
+}
+
+/* Animate the image */
+.hero-image img {
+  width: 90%;
+  height: 100%;
+  /* border-radius: 5px; */
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Keyframes for the image animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 📌 RESPONSIVE DESIGN */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .hero::before {
+    display: none; /* Remove skewed background for mobile */
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .hero-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    width: 80%;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 50px 5%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+  }
+
+  .hero-button {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100;
+    border-radius: 0;
+  }
+}

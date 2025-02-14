@@ -1,0 +1,25 @@
+:root{
+  /* --Green: #045b44; */
+  /* --Green: #0d7c5e; */
+  /* --Green: #1a5848; */
+  /* --Green: #2c6a58; */
+  /* --Green: #3a6156; */
+  --Green: #61443a;
+  --Brown: #621d35;
+  --text-dark:#333;
+  --text-light:#aaa;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", serif;
+}
+
+.lato{
+  font-family: "Lato", serif !important;
+}
+.Moda{
+  font-family: "Playfair Display", serif;
+}
