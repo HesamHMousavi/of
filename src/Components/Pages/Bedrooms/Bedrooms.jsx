@@ -18,15 +18,7 @@ const Bedrooms = () => {
       <ImgTop Img={Img} title={"BEDROOMS"} />
       <Hero
         title={"The highest quality, tailor made"}
-        description="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem. 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem. 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem. 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem. 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem. 
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+        description="At Oak Forest of Yorkshire, we design beautiful, functional bedrooms that reflect your style and maximise your space. From tranquil, minimalist sanctuaries to luxurious, feature-rich retreats, our bespoke interiors are crafted with meticulous attention to detail. We tailor every element of your bedroom, ensuring it feels like a true haven with clever space-saving layouts, premium materials, and elegant lighting solutions. Our custom storage options, such as made-to-measure wardrobes, integrate seamlessly into your design—combining sleek aesthetics with smart functionality to keep your space clutter-free. Let us turn your bedroom into a sanctuary designed just for you."
         Img={Img2}
         ShowBtn={false}
       />
