@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import fullLogo from "../../IMGS/cLogo.jpeg";
 import smallLogo from "../../IMGS/cLogo.jpeg";
 import { Link } from "react-router-dom"; // Corrected import
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const nav = useNavigate();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // Mobile menu state
 
@@ -38,9 +40,6 @@ const Header = () => {
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
-      {/* Hamburger Menu Button */}
-
-      {/* Navigation - Main */}
       <nav className={`nav`}>
         <Link to="/" className="Moda" onClick={() => setMenuOpen(false)}>
           Home
@@ -63,6 +62,7 @@ const Header = () => {
       <img
         src={scrolled ? smallLogo : fullLogo}
         alt="Oakforest Logo"
+        onClick={() => nav("/")}
         className={`logo ${!scrolled ? "br" : "br"}`}
       />
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>

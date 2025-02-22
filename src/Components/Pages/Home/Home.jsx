@@ -25,13 +25,13 @@ const Home = () => {
       <ImgTop Img={KitImg} />
       <Hero
         title={"LUXURY TAILORED BEDROOM DESIGN"}
-        description="At Oak Forest of Yorkshire, we specialise in mid-to-upper-market. Handcrafted kitchens tailored to your lifestyle. 
-        Bespoke bedrooms designed for comfort and elegance.
-        Custom-built office furniture for both home and commercial spaces.
-        Lounge cabinetry and TV walls that redefine living spaces.
-        Our vision is simple: to offer timeless, high-quality interiors that enhance every space we touch. 
-        Whether you'relooking for a contemporary kitchen, a classic bedroom, or a fully bespoke interior solution, 
-        our expertise ensures atruly personalised experience from design to installation.
+        description="At Oak Forest of Yorkshire, we specialise in mid-to-upper-market. Handcrafted kitchens tailored to your lifestyle . 
+        Bespoke bedrooms designed for comfort and elegance .
+        Custom-built office furniture for both home and commercial spaces .
+        Lounge cabinetry and TV walls that redefine living spaces .
+        Our vision is simple: to offer timeless, high-quality interiors that enhance every space we touch . 
+        Whether you're looking for a contemporary kitchen, a classic bedroom, or a fully bespoke interior solution, 
+        our expertise ensures atruly personalised experience from design to installation .
         "
         Img={IMG}
       />
@@ -49,7 +49,7 @@ const Home = () => {
         description={
           <>
             Please feel free to give us a call on
-            <span className="tag"> 01274 588 931 </span> or send us an enquiry
+            <span className="tag"> 01274 576 908 </span> or send us an enquiry
             through our
             <span
               className="tag link"

@@ -9,7 +9,18 @@ import ImgGrid from "../../ImgGrid/ImgGrid";
 import ContactForm from "../../ContactForm/ContactForm";
 import Footer from "../../Footer/Footer";
 
-import IMG1 from "../../../IMGS/cLogo.jpeg";
+// import IMG1 from "../../../IMGS/cLogo.jpeg";
+
+import IMG1 from "../../../IMGS/bedrooms/IMG1.jpg";
+import IMG2 from "../../../IMGS/bedrooms/IMG2.jpg";
+import IMG3 from "../../../IMGS/bedrooms/IMG3.jpg";
+import IMG4 from "../../../IMGS/bedrooms/IMG4.jpg";
+import IMG5 from "../../../IMGS/bedrooms/IMG5.jpg";
+import IMG6 from "../../../IMGS/bedrooms/IMG6.jpg";
+import IMG7 from "../../../IMGS/bedrooms/IMG7.jpg";
+import IMG8 from "../../../IMGS/bedrooms/IMG8.jpg";
+import IMG9 from "../../../IMGS/bedrooms/IMG9.jpg";
+import IMG10 from "../../../IMGS/bedrooms/IMG10.jpg";
 
 const Bedrooms = () => {
   return (
@@ -31,36 +42,51 @@ const Bedrooms = () => {
       <ImgGrid
         images={[
           IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
-          IMG1,
+          IMG2,
+          IMG3,
+          IMG4,
+          IMG5,
+          IMG6,
+          IMG7,
+          IMG8,
+          IMG2,
+          IMG3,
+          IMG4,
+          IMG9,
+          IMG10,
+          IMG5,
+          IMG6,
+          IMG6,
+          IMG7,
+          IMG8,
+          IMG2,
+          IMG3,
+          IMG4,
+          IMG9,
+          IMG10,
+          IMG5,
+          IMG6,
+          IMG6,
+          IMG7,
+          IMG8,
+          IMG2,
+          IMG3,
+          IMG4,
+          IMG9,
+          IMG10,
+          IMG5,
+          IMG6,
+          IMG6,
+          IMG7,
+          IMG8,
+          IMG2,
+          IMG3,
+          IMG4,
+          IMG9,
+          IMG10,
+          IMG5,
+          IMG6,
+          IMG7,
         ]}
       />
       <ContactForm />

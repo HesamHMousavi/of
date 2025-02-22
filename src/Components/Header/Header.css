@@ -39,6 +39,7 @@
 
 /* Logo Styling */
 .logo {
+  cursor: pointer;
   width: 120px; 
   transition: all 0.3s ease-in-out;
   margin-left: 1rem;

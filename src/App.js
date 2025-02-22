@@ -6,11 +6,12 @@ import Bedrooms from "./Components/Pages/Bedrooms/Bedrooms";
 import War from "./Components/Pages/War/War";
 import ContactPage from "./Components/Pages/Contact/ContactPage";
 import MWalls from "./Components/Pages/MWalls/MWalls";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* Ensures scrolling to top on every page change */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/kitchens" element={<KitchenPage />} />
@@ -19,6 +20,15 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/media-walls" element={<MWalls />} />
       </Routes>
+      <div className="whats-app">
+        <a
+          href="https://api.whatsapp.com/send?phone=447739034893"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <IoLogoWhatsapp size={70} className="whats-app-icon" />
+        </a>
+      </div>
     </Router>
   );
 }

@@ -31,24 +31,24 @@ const ContactForm = () => {
   return (
     <section className="contact" id="contact" ref={contactRef}>
       <div className="contact-wrapper">
-        {/* Left Side - Text Content */}
         <div className="contact-info">
           <div className="right-mg">
             <h1 className="contact-title Moda">CONTACT US</h1>
             <p className="contact-desc">
-              Our showroom is open Monday to Friday from 9am – 5pm and Saturdays
-              from 10am to 4pm, or for appointment only if required. Please feel
+              Our showroom is open Monday to Saturday from 8am – 5pm and Sundays
+              from 11am to 5pm, or for appointment only if required. Please feel
               free to give us a call or send us an enquiry through this contact
               form and we’d be delighted to speak with you.
             </p>
             <div className="contact-details">
-              <h3 className="company-name Moda">OAKFOREST OF YORKSHIRE</h3>
-              <p className="Moda">18 Northgate</p>
-              <p className="Moda">Baildon</p>
+              <h3 className="company-name Moda">OAK FOREST</h3>
+              <p className="Moda">Unit 10 Cooper Ln</p>
+              <p className="Moda">Great Horton Industrial Estate</p>
+              <p className="Moda">Bradford</p>
               <p className="Moda">West Yorkshire</p>
-              <p className="Moda">BD17 6JX</p>
+              <p className="Moda">BD6 3ND</p>
               <p className="contact-phone">
-                <span className="Moda">TEL: 01274 588 931</span>
+                <span className="Moda">TEL: 01274 576 908</span>
               </p>
             </div>
           </div>

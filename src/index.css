@@ -17,6 +17,42 @@
   font-family: "Lato", serif;
 }
 
+.whats-app {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: 9999; /* Ensure it stays on top */
+}
+
+.whats-app a {
+  text-decoration: none ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* WhatsApp Green */
+  color: white !important; /* Icon color */
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whats-app-icon {
+  padding: 15px;
+}
+
+.whats-app a:hover {
+  background-color: #1ebc5c;
+}
+@media (max-width: 768px) {
+  .whats-app {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+  }   
+}
+
 .lato{
   font-family: "Lato", serif !important;
 }
